@@ -1,0 +1,46 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+<h1 class="text-center"><strong>Francisco Rojas Lopez</strong></h1>
+<br>
+<p class="text-center">
+  Soy fotógrafo de naturaleza y viajes. Busco el alma de los lugares, el aliento del viento
+  en los paisajes y el latido oculto en la mirada de la vida silvestre.
+</p>
+
+<p class="text-center"><small><i>Fotografiar es guardar un pedacito de la vida antes de que se escape.</i></small></p>
+
+<section class="row g-3 galeria-index">
+
+  <div class="col-6 col-md-4 col-lg-3">
+    <a href="{% url 'paisajes' %}" class="text-decoration-none nav-link active">
+      <img src="{% static 'web/img/paisajes.webp' %}" class="img-fluid rounded" alt="Paisajes">
+      <p class="text-center mt-2 nav-link p-0">Paisajes</p>
+    </a>
+  </div>
+
+  <div class="col-6 col-md-4 col-lg-3">
+    <a href="{% url 'vida_silvestre' %}" class="text-decoration-none nav-link active">
+      <img src="{% static 'web/img/vida_silvestre.webp' %}" class="img-fluid rounded" alt="Vida Silvestre">
+      <p class="text-center mt-2 nav-link p-0">Vida Silvestre</p>
+    </a>
+  </div>
+
+  <div class="col-6 col-md-4 col-lg-3">
+    <a href="{% url 'viajes' %}" class="text-decoration-none nav-link active ">
+      <img src="{% static 'web/img/viajes.webp' %}" class="img-fluid rounded" alt="Viajes">
+      <p class="text-center mt-2 nav-link p-0">Viajes</p>
+    </a>
+  </div>
+
+  <div class="col-6 col-md-4 col-lg-3">
+    <a href="{% url 'retratos' %}" class="text-decoration-none nav-link active">
+      <img src="{% static 'web/img/retratos.webp' %}" class="img-fluid rounded" alt="Retratos">
+      <p class="text-center mt-2 nav-link p-0">Retratos</p>
+    </a>
+  </div>
+
+</section>
+{% endblock %}

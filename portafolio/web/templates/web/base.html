@@ -1,0 +1,49 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francisco Rojas Lopez</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'web/css/estilo.css' %}">
+</head>
+
+<body>
+
+  <header class="text-center sticky-top bg-white border-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav class="nav gap-3">
+            <a class="nav-link active" href="{% url 'inicio' %}">Inicio</a>
+            <a class="nav-link" href="{% url 'paisajes' %}">Paisajes</a>
+            <a class="nav-link" href="{% url 'vida_silvestre' %}">Vida Silvestre</a>
+            <a class="nav-link" href="{% url 'viajes' %}">Viajes</a>
+            <a class="nav-link" href="{% url 'retratos' %}">Retratos</a>
+            <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+
+  <main class="container-fluid mt-4">
+    {% block content %}
+
+    {% endblock %}
+
+  </main>
+
+  <footer class="text-center mt-5">
+    <div class="container-fluid">
+      <p>Powered by Francisco Rojas Lopez</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

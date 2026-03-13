@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Entorno virtual
+venv/
+env/
+
+# Base de datos
+db.sqlite3
+
+# Archivos de sistema
+.DS_Store
+
+# Archivos de Django
+*.log
+media/
+
+# Variables de entorno
+.env
+
+#documento word
+ABP_explicacion.docx

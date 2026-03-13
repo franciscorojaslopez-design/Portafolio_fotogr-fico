@@ -1,0 +1,42 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block content %}
+<h2><strong>Galería de vida silvestre</strong></h2>
+<br>
+<section class="row g-3 galeria-vida-silvestre">
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="foto-box horizontal">
+            <a href="{% static 'web/img/vida_silvestre/1.webp' %}" data-bs-toggle="modal" target="_blank">
+                <img src="{% static 'web/img/vida_silvestre/1.webp' %}" class="img-fluid rounded" alt="Paisaje 1">
+            </a>
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="foto-box horizontal">
+            <a href="{% static 'web/img/vida_silvestre/2.webp' %}" data-bs-toggle="modal" target="_blank">
+                <img src="{% static 'web/img/vida_silvestre/2.webp' %}" class="img-fluid rounded" alt="Paisaje 1">
+            </a>
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="foto-box horizontal">
+            <a href="{% static 'web/img/vida_silvestre/3.webp' %}" data-bs-toggle="modal" target="_blank">
+                <img src="{% static 'web/img/vida_silvestre/3.webp' %}" class="img-fluid rounded" alt="Paisaje 1">
+            </a>
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="foto-box horizontal">
+            <a href="{% static 'web/img/vida_silvestre/4.webp' %}" data-bs-toggle="modal" target="_blank">
+                <img src="{% static 'web/img/vida_silvestre/4.webp' %}" class="img-fluid rounded" alt="Paisaje 1">
+            </a>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

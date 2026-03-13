@@ -1,0 +1,42 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h2 class="text-center"><Strong>Contacto</Strong></h2>
+<br>
+<p class="text-center"><i>Cada fotografía comienza con una conversación.</i></p>
+<p class="text-center"><i>Cuéntame tu idea y juntos crearemos algo único.</i></p>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <form method="post" class="card p-4 shadow">
+                {% csrf_token %}
+                <h3 class="mb-4 text-center">Contacto</h3>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" placeholder="Nombre completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Dirección de correo electrónico</label>
+                    <input type="email" class="form-control" name="email" placeholder="name@mail.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+                {% if mensaje_enviado %}
+                <div class="alert alert-success mt-3">
+                    ¡Gracias por contactarnos! Tu mensaje ha sido enviado.
+                </div>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
