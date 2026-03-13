@@ -67,3 +67,53 @@ portafolio_ABP/
 │               ├── retratos/
 │               ├── viajes/
 │               └── vida_silvestre/
+
+
+⸻
+
+🧠 Conceptos de Django utilizados
+
+Este proyecto aplica varios conceptos fundamentales de Django:
+	•	Apps para modularizar la aplicación (web)
+	•	Views para manejar las solicitudes HTTP
+	•	Templates para renderizar HTML
+	•	Static files para CSS e imágenes
+	•	URL routing para la navegación del sitio
+
+⸻
+
+🎯 Objetivo del proyecto
+
+El objetivo principal de este proyecto es:
+	•	Comprender la estructura de un proyecto Django
+	•	Implementar un sitio web con múltiples páginas
+	•	Organizar contenido visual mediante plantillas y rutas
+	•	Practicar el flujo petición → vista → template → respuesta
+
+⸻
+
+🛠 Tecnologías utilizadas
+	•	Python
+	•	Django
+	•	HTML5
+	•	CSS3
+	•	Imágenes WebP
+
+⸻
+
+📌 Posibles mejoras
+
+Algunas mejoras futuras podrían incluir:
+	•	Panel de administración para subir fotografías
+	•	Base de datos para gestionar galerías
+	•	Sistema de autenticación
+	•	Formularios de contacto funcionales
+	•	Optimización SEO
+	•	Diseño responsive completo
+
+⸻
+
+👤 Autor
+
+Proyecto desarrollado por Francisco Rojas como parte de su aprendizaje en desarrollo web con Django.
+
